@@ -37,6 +37,7 @@ func main() {
 	// update student
 	router.HandleFunc("PUT /api/students/{id}", student.UpdateById(storage))
 	// delete student
+	router.HandleFunc("DELETE /api/students/{id}", student.DeleteById(storage))
 
 
 	// setup server
